@@ -2,7 +2,8 @@
 id: index
 layout: default
 title: Prairieland Market
-carousel: yes
+carousel: "yes"
+published: true
 ---
 
 Market mission
@@ -13,14 +14,14 @@ health of both food buyers and growers, and
 of community and the environment, with
 products natural and local. To that end we:
 
-* favor food raised organically rather than with
+- favor food raised organically rather than with
 synthetic chemicals.
-* favor food grown close to home by family
+- favor food grown close to home by family
 farms over distant, corporate suppliers.
-* want buyers to find not only healthful food,
+- want buyers to find not only healthful food,
 but also helpful knowledge.
-* want growers rewarded with a fair price.
-* work for all to enjoy a personable and
+- want growers rewarded with a fair price.
+- work for all to enjoy a personable and
 flourishing marketplace.
 
 > "How we eat determines, to a considerable extent, how the world is used."
