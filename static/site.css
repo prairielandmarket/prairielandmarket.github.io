@@ -1,0 +1,239 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  color: #39280a;
+  background-color: #fdf6d9;
+  font-family: 'Noto Serif', serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  margin: 0 auto 2em;
+  padding: 0;
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  margin: .5em 0;
+  line-height: 1.2; }
+
+a {
+  color: #1d39a6;
+  text-decoration: none;
+  -webkit-transition-property: text-shadow;
+  -moz-transition-property: text-shadow;
+  -o-transition-property: text-shadow;
+  transition-property: text-shadow;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+  a:hover {
+    text-shadow: 0 0 1em rgba(37, 72, 209, 0.4); }
+  a:visited {
+    color: #451da6; }
+    a:visited:hover {
+      text-shadow: 0 0 1em rgba(87, 37, 209, 0.4); }
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  border-left: 0.25rem solid rgba(0, 0, 0, 0.2);
+  padding-left: 1rem; }
+  blockquote cite {
+    padding-left: 5rem; }
+
+.clear {
+  clear: both; }
+
+.header-container {
+  background-color: floralwhite;
+  padding-top: 1em;
+  border-bottom: 30px solid #0b4110;
+  z-index: 5;
+  position: relative;
+  box-shadow: 0 0 .5em black; }
+
+header {
+  width: 90%;
+  max-width: 65rem;
+  margin: 0 auto;
+  position: relative;
+  height: 240px; }
+  header hgroup {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    display: block;
+    width: 380px;
+    height: 240px;
+    background-image: url("plandlogo.png");
+    background-repeat: no-repeat;
+    background-position: center center; }
+    header hgroup * {
+      position: absolute;
+      top: -9999px; }
+    header hgroup:hover {
+      background-image: url("plandlogo_hover.png"); }
+  header aside.info, header nav {
+    font-family: 'Lato', sans-serif; }
+    header aside.info a:visited, header nav a:visited {
+      color: #1d39a6; }
+  header aside.info {
+    position: absolute;
+    bottom: 4em;
+    right: 0;
+    text-align: right; }
+    header aside.info p {
+      margin: 0; }
+    header aside.info .hours span:after {
+      content: ', '; }
+    header aside.info .hours span:last-child:after {
+      content: ''; }
+  header nav {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    margin-top: 1em;
+    margin-right: -.375em; }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        display: inline; }
+        header nav ul li a {
+          padding: .375em;
+          margin-left: .25em;
+          border-radius: .375em;
+          -webkit-transition-property: background-color;
+          -moz-transition-property: background-color;
+          -o-transition-property: background-color;
+          transition-property: background-color;
+          -webkit-transition-duration: 0.2s;
+          -moz-transition-duration: 0.2s;
+          -o-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+          header nav ul li a:hover {
+            text-shadow: none;
+            background-color: rgba(29, 57, 166, 0.1); }
+          header nav ul li a.active {
+            background-color: #707aa0;
+            color: white; }
+
+div.carousel {
+  font-family: 'Lato', sans-serif;
+  clear: both;
+  overflow: hidden;
+  height: 300px;
+  box-shadow: 0 0 .5em black;
+  position: relative; }
+  div.carousel aside {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    color: floralwhite;
+    text-shadow: 0 0 .5em black;
+    line-height: 1.25;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 55%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    @media (min-width: 72.2222em) {
+      div.carousel aside {
+        padding-left: -webkit-calc(50% - 32.5rem);
+        padding-left: -moz-calc(50% - 32.5rem);
+        padding-left: -o-calc(50% - 32.5rem);
+        padding-left: calc(50% - 32.5rem);
+        padding-right: -webkit-calc(50% + 4rem);
+        padding-right: -moz-calc(50% + 4rem);
+        padding-right: -o-calc(50% + 4rem);
+        padding-right: calc(50% + 4rem); } }
+    div.carousel aside h1, div.carousel aside p {
+      margin: 0; }
+    div.carousel aside h1 {
+      padding-top: .75em;
+      font-weight: 900;
+      font-size: 36pt; }
+    div.carousel aside p {
+      padding-top: .75em;
+      font-weight: bold;
+      font-size: 14pt; }
+    div.carousel aside:first-child {
+      z-index: 2; }
+    div.carousel aside.carousel-text-right {
+      text-align: right;
+      padding-left: 55%;
+      padding-right: 5%; }
+      @media (min-width: 72.2222em) {
+        div.carousel aside.carousel-text-right {
+          padding-left: -webkit-calc(50% + 4rem);
+          padding-left: -moz-calc(50% + 4rem);
+          padding-left: -o-calc(50% + 4rem);
+          padding-left: calc(50% + 4rem);
+          padding-right: -webkit-calc(50% - 32.5rem);
+          padding-right: -moz-calc(50% - 32.5rem);
+          padding-right: -o-calc(50% - 32.5rem);
+          padding-right: calc(50% - 32.5rem); } }
+
+div.main {
+  width: 90%;
+  max-width: 65rem;
+  margin: 0 auto;
+  margin-top: 1em; }
+  div.main section > :first-child {
+    margin-top: 1rem; }
+  div.main.with-sidebar section {
+    float: left;
+    width: 70%;
+    padding-right: 2rem; }
+  div.main.with-sidebar .sidebar {
+    float: right;
+    width: 30%; }
+  div.main.with-sidebar aside {
+    margin: .5em 0;
+    background-color: #faedb4;
+    padding: 1em;
+    border-radius: .375em; }
+    div.main.with-sidebar aside:first-of-type {
+      margin-top: 0; }
+    div.main.with-sidebar aside *:only-child {
+      margin-top: 0;
+      margin-bottom: 0; }
+    div.main.with-sidebar aside *:first-child {
+      margin-top: 0; }
+    div.main.with-sidebar aside *:last-child {
+      margin-bottom: 0; }
+
+footer {
+  width: 90%;
+  max-width: 65rem;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  clear: both;
+  padding-top: 3em;
+  font-size: 10pt;
+  opacity: .9; }
+  footer > * {
+    width: 50%;
+    text-align: right;
+    float: right;
+    padding-left: 1.5em;
+    text-indent: -1.5em; }
+  footer address {
+    text-align: left;
+    float: left;
+    font-style: normal;
+    padding-left: 0;
+    text-indent: 0; }
+  footer p {
+    margin: 0; }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/static/site.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic|Lato:400,400italic,700,700italic,900,900italic">
+  </head>
+  <body>
+    {% include header.html %}
+    {% include carousel.html %}
+    <div class="main{% if page.sidebar != false %} with-sidebar{% endif %}">
+      <section>
+        {{ content }}
+      </section>
+      {% include sidebar.html %}
+    </div>
+    {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/static/site.js"></script>
+  </body>
+</html>
+{% comment %}
+vim: set ts=2 sw=2 sta et syn=liquid:
+{% endcomment %}

@@ -1,0 +1,15 @@
+- header: Wide selection of organic foods
+  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi velit, consequat eget ornare eget, sollicitudin ut augue.
+  image: /static/carousel_organic.jpg
+  image-position: right
+  text-position: left
+- header: Local produce & dairy
+  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi velit, consequat eget ornare eget, sollicitudin ut augue.
+  image: /static/carousel_dairy.jpg
+  image-position: center
+  text-position: right
+- header: Buy in bulk
+  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi velit, consequat eget ornare eget, sollicitudin ut augue.
+  image: /static/carousel_bulk.jpg
+  image-position: left
+  text-position: right

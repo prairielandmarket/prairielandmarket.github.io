@@ -1,0 +1,19 @@
+{% if page.sidebar != false %}
+  <div class="sidebar">
+    <aside>
+      <h1>Recent blog posts</h1>
+      <ul class="posts">
+        {% for post in site.posts limit: 5 %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+    <aside>
+      <h1>Subscribe to our newsletter</h1>
+      <p>(Here would be a form to enter your email)</p>
+    </aside>
+  </div>
+{% endif %}
+{% comment %}
+vim: set ts=2 sw=2 sta et syn=liquid:
+{% endcomment %}

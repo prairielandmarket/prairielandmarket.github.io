@@ -1,0 +1,5 @@
+name: Prairieland Market
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+timezone: America/Chicago

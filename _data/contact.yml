@@ -1,0 +1,19 @@
+email: prairielandmarketsalina@gmail.com
+phone:
+  e164: "+17858275877"
+  human: (785) 827-5877
+address:
+  street: 305 East Walnut Street
+  city: Salina
+  state: Kansas
+  zip: 67401
+  url: http://maps.google.com/maps?q=305+East+Walnut+Street,+Salina,+Kansas&t=m
+hours:
+  - day_start: Monday
+    day_end: Tuesday
+    time_start: 2 pm
+    time_end: 6 pm
+  - day_start: Wednesday
+    day_end: Saturday
+    time_start: 10 am
+    time_end: 6 pm

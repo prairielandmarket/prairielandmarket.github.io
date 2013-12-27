@@ -1,0 +1,16 @@
+<footer>
+  <address>
+    <a href="http://www.prairielandmarket.com/">Prairieland Market</a><br>
+    <a href="{{ site.data.contact.address.url | escape }}">{{ site.data.contact.address.street }}</a><br>
+    {{ site.data.contact.address.city }}, {{ site.data.contact.address.state }} {{ site.data.contact.address.zip }}<br>
+    <a href="tel:{{ site.data.contact.phone.e164 }}">{{ site.data.contact.phone.human }}</a><br>
+    <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+  </address>
+  <p>&copy; 2013 Prairieland Market</p>
+  <p>Web services by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ianweller.org/" property="cc:attributionName" rel="cc:attributionURL">Ian Weller</a></p>
+  <p>Design <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+</footer>
+<div class="clear"></div>
+{% comment %}
+vim: set ts=2 sw=2 sta et syn=liquid:
+{% endcomment %}

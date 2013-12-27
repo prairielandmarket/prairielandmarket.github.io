@@ -1,0 +1,13 @@
+{% if page.carousel %}
+  <div class="carousel">
+    {% for carousel in site.data.carousel %}
+      <aside class="carousel-text-{{ carousel.text-position }}" style="background-image:url('{{ carousel.image }}');background-position:{{ carousel.image-position }};">
+        <h1>{{ carousel.header }}</h1>
+        <p>{{ carousel.text }}</p>
+      </aside>
+    {% endfor %}
+  </div>
+{% endif %}
+{% comment %}
+vim: set ts=2 sw=2 sta et syn=liquid:
+{% endcomment %}

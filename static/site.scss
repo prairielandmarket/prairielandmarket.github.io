@@ -1,0 +1,348 @@
+// mixins --------------------------------------------------------------------
+// logo colors
+$brown: rgb(166, 115, 29);
+$yellow: rgb(229, 187, 14);
+$green: rgb(11, 65, 16);
+$offwhite: rgb(255, 250, 240);
+
+// derived colors
+$blue: adjust-hue($brown, 190);
+$purple: adjust-hue($blue, 30);
+
+// mixins --------------------------------------------------------------------
+
+@mixin prefix($property, $value) {
+	-webkit-#{$property}: #{$value};
+	-moz-#{$property}: #{$value};
+	-o-#{$property}: #{$value};
+	#{$property}: #{$value};
+}
+
+@mixin calc($property, $value) {
+	#{$property}: -webkit-calc(#{$value});
+	#{$property}: -moz-calc(#{$value});
+	#{$property}: -o-calc(#{$value});
+	#{$property}: calc(#{$value});
+}
+
+@mixin sans-serif {
+	font-family: 'Lato', sans-serif;
+}
+
+@mixin page-width {
+	width: 90%;
+	max-width: 65rem;
+	margin: 0 auto;
+}
+
+@mixin clear {
+	clear: both;
+}
+
+// global styles -------------------------------------------------------------
+
+* {
+	@include prefix(box-sizing, border-box);
+}
+
+body {
+	color: darken($brown, 25%);
+	background-color: scale-color($yellow, $lightness: 85%);
+	font-family: 'Noto Serif', serif;
+	font-size: 12pt;
+	line-height: 1.5;
+	margin: 0 auto 2em;
+	padding: 0;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include sans-serif;
+	margin: .5em 0;
+	line-height: 1.2;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+	@include prefix(transition-property, 'text-shadow');
+	@include prefix(transition-duration, 0.2s);
+
+	&:hover {
+		text-shadow: 0 0 1em transparentize(lighten($blue, 10%), .6);
+	}
+
+	&:visited {
+		color: $purple;
+
+		&:hover {
+			text-shadow: 0 0 1em transparentize(lighten($purple, 10%), .6);
+		}
+	}
+}
+
+blockquote {
+	margin-left: 0;
+	margin-right: 0;
+	border-left: .25rem solid rgba(0, 0, 0, 0.2);
+	padding-left: 1rem;
+
+	cite {
+		padding-left: 5rem;
+	}
+}
+
+.clear {
+	@include clear;
+}
+
+// header --------------------------------------------------------------------
+
+.header-container {
+	background-color: $offwhite;
+	padding-top: 1em;
+	border-bottom: 30px solid $green;
+	z-index: 5;
+	position: relative;
+	box-shadow: 0 0 .5em black;
+}
+
+header {
+	@include page-width;
+	position: relative;
+	height: 240px;
+
+	hgroup {
+		position: absolute;
+		bottom: 0;
+		left: -10px;
+
+		display: block;
+		width: 380px;
+		height: 240px;
+		background-image: url("plandlogo.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		* {
+			position: absolute;
+			top: -9999px;
+		}
+
+		&:hover {
+			background-image: url("plandlogo_hover.png");
+		}
+	}
+
+	aside.info, nav {
+		@include sans-serif;
+
+		a:visited {
+			color: $blue;
+		}
+	}
+
+	aside.info {
+		position: absolute;
+		bottom: 4em;
+		right: 0;
+		text-align: right;
+
+		p {
+			margin: 0;
+		}
+
+		.hours span:after {
+			content: ', ';
+		}
+
+		.hours span:last-child:after {
+			content: '';
+		}
+	}
+
+	nav {
+		position: absolute;
+		bottom: 1em;
+		right: 0;
+
+		@include sans-serif;
+		display: block;
+		margin-top: 1em;
+		margin-right: -.375em;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline;
+
+				a {
+					padding: .375em;
+					margin-left: .25em;
+					border-radius: .375em;
+					@include prefix(transition-property, 'background-color');
+					@include prefix(transition-duration, 0.2s);
+
+					&:hover {
+						text-shadow: none;
+						background-color: transparentize($blue, .9);
+					}
+
+					&.active {
+						background-color: lighten(desaturate($blue, 50%), 15%);
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+// carousel ------------------------------------------------------------------
+
+div.carousel {
+	@include sans-serif;
+	@include clear;
+
+	overflow: hidden;
+	height: 300px;
+	box-shadow: 0 0 .5em black;
+	position: relative;
+
+	aside {
+		background-color: black;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 300px;
+		width: 100%;
+		margin: 0;
+		color: $offwhite;
+		text-shadow: 0 0 .5em black;
+		line-height: 1.25;
+		padding: 0;
+		padding-left: 5%;
+		padding-right: 55%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		@media (min-width: 72.2222em) {
+			@include calc(padding-left, "50% - 32.5rem");
+			@include calc(padding-right, "50% + 4rem");
+		}
+
+		h1, p {
+			margin: 0;
+		}
+
+		h1 {
+			padding-top: .75em;
+			font-weight: 900;
+			font-size: 36pt;
+		}
+
+		p {
+			padding-top: .75em;
+			font-weight: bold;
+			font-size: 14pt;
+		}
+
+		&:first-child {
+			z-index: 2;
+		}
+
+		&.carousel-text-right {
+			text-align: right;
+			padding-left: 55%;
+			padding-right: 5%;
+
+			@media(min-width: 72.2222em) {
+				@include calc(padding-left, "50% + 4rem");
+				@include calc(padding-right, "50% - 32.5rem");
+			}
+		}
+	}
+}
+
+// body ----------------------------------------------------------------------
+
+div.main {
+	@include page-width;
+	margin-top: 1em;
+
+	section > :first-child {
+		margin-top: 1rem;
+	}
+
+	&.with-sidebar {
+		section {
+			float: left;
+			width: 70%;
+			padding-right: 2rem;
+		}
+
+		.sidebar {
+			float: right;
+			width: 30%;
+		}
+
+		aside {
+			margin: .5em 0;
+			background-color: scale-color($yellow, $lightness: 70%);
+			padding: 1em;
+			border-radius: .375em;
+
+			&:first-of-type {
+				margin-top: 0;
+			}
+
+			*:only-child {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			*:first-child {
+				margin-top: 0;
+			}
+
+			*:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+// footer --------------------------------------------------------------------
+
+footer {
+	@include page-width;
+	@include sans-serif;
+	@include clear;
+
+	padding-top: 3em;
+	font-size: 10pt;
+	opacity: .9;
+
+	& > * {
+		width: 50%;
+		text-align: right;
+		float: right;
+		padding-left: 1.5em;
+		text-indent: -1.5em;
+	}
+
+	address {
+		text-align: left;
+		float: left;
+		font-style: normal;
+		padding-left: 0;
+		text-indent: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+}
