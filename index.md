@@ -2,6 +2,7 @@
 id: index
 layout: default
 title: Prairieland Market
+show_title: false
 carousel: "yes"
 published: true
 ---
