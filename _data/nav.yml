@@ -1,7 +1,6 @@
 - name: About us
   id: index
   url: /
-- name: Market blog
 - name: Local producers
   id: local_producers
 - name: FAQ
