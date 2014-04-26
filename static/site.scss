@@ -311,6 +311,11 @@ div.main {
 			*:last-child {
 				margin-bottom: 0;
 			}
+
+			&.newsletter p {
+				@include sans-serif;
+				font-size: 16pt;
+			}
 		}
 	}
 }
