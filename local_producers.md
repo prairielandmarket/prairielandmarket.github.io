@@ -5,6 +5,8 @@ title: Local producers
 published: true
 ---
 
+# Producer stories
+
 **C&C High Tunnel Farms** began in 2009 when Chris and Christi Janssen began growing vegetables for market.  The Janssens grow tomatoes, peppers, okra, eggplant, cucumbers, and sweet potatoes.  Their farm in Scandia, KS includes two 30'&times;140' high tunnels that allow for an extended growing season.  Through the winter months they grow spinach, kale, mixed greens, lettuce, and radishes. 
 
 **ACME Thelander Farm** raises hormone free pastured chicken, eggs, pork, beef and raw cow's milk.  Their mission is to raise wholesome, nutritious food in a sustainable fashion while improving the soil and providing a reasonable income and healthy environment to raise their family.  John and Kellie and their children see themselves as stewards of the land and animals God has given them. 
