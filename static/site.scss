@@ -120,7 +120,7 @@ header {
 		display: block;
 		width: 380px;
 		height: 240px;
-		background-image: url("plandlogo.png");
+		background-image: url("plandlogo_sprite.png");
 		background-repeat: no-repeat;
 		background-position: center center;
 
@@ -130,7 +130,7 @@ header {
 		}
 
 		&:hover {
-			background-image: url("plandlogo_hover.png");
+			background-position: -380px 0;
 		}
 	}
 

@@ -69,14 +69,14 @@ header {
     display: block;
     width: 380px;
     height: 240px;
-    background-image: url("plandlogo.png");
+    background-image: url("plandlogo_sprite.png");
     background-repeat: no-repeat;
     background-position: center center; }
     header hgroup * {
       position: absolute;
       top: -9999px; }
     header hgroup:hover {
-      background-image: url("plandlogo_hover.png"); }
+      background-position: -380px 0; }
   header aside.info, header nav {
     font-family: 'Lato', sans-serif; }
     header aside.info a:visited, header nav a:visited {
