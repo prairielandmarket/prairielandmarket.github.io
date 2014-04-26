@@ -315,6 +315,7 @@ div.main {
 			&.newsletter p {
 				@include sans-serif;
 				font-size: 16pt;
+				font-weight: bold;
 			}
 		}
 	}
