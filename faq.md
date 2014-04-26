@@ -5,6 +5,8 @@ title: FAQ
 published: true
 ---
 
+# FAQ
+
 ## Do I need to be a member to shop at Prairieland Market?
 No, anyone can shop at Prairieland Market.  Members pay a fee and receive discounts and voting privileges.  With a $50 annual membership, your household will save 5% on every purchase for that year.  A $200 fee earns the 5% discount for life.    A Premium membership at $450 gets a 10% lifetime discount.  Bulk orders receive an additional 5% discount.
 
