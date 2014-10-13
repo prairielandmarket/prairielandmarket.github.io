@@ -6,6 +6,14 @@ timezone: America/Chicago
 prose:
   siteurl: "http://www.prairielandmarket.org"
   media: "media"
+  ignore:
+    - .gitignore
+    - .gitkeep
+    - _config.yml
+    - CNAME
+    - /_layouts
+    - /_includes
+    - /static
   metadata:
     _posts:
       - name: "layout"
