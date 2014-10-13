@@ -3,3 +3,16 @@ markdown: rdiscount
 rdiscount:
   extensions: [smart]
 timezone: America/Chicago
+prose:
+  siteurl: "http://www.prairielandmarket.org"
+  media: "media"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
