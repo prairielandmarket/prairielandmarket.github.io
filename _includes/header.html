@@ -9,7 +9,7 @@
     <aside class="info">
       <p class="address"><a href="{{ site.data.contact.address.url | escape }}">{{ site.data.contact.address.street }}</a>, {{ site.data.contact.address.city }}, {{ site.data.contact.address.state }}</p>
       <p class="contact"><a href="tel:{{ site.data.contact.phone.e164 }}">{{ site.data.contact.phone.human }}</a> &mdash; <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a></p>
-      <p class="hours">{% for hours in site.data.contact.hours %}<span>{{ hours.day_start }}&ndash;{{ hours.day_end }}: {{ hours.time_start }}&ndash;{{ hours.time_end }}</span>{% endfor %}</p>
+      <p class="hours">{% for hours in site.data.contact.hours %}<span>{{ hours.day_start }}{% if hours.day_end and hours.day_end != hours.day_start %}&ndash;{{ hours.day_end }}{% endif %}: {{ hours.time_start }}&ndash;{{ hours.time_end }}</span>{% endfor %}</p>
     </aside>
     <nav>
     <ul>{% for link in site.data.nav %}<li><a {% if page.id == link.id %}class="active" {% endif %}href="{% if link.url %}{{ link.url }}{% else %}/{{ link.id }}.html{% endif %}">{{ link.name }}</a></li>{% endfor %}</ul>
