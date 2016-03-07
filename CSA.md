@@ -20,4 +20,4 @@ Gabe's Sunflower Oasis
 [Saline County Produce](https://www.facebook.com/salinecountyproduce)  
 Twin Creek Farm  
 
-
+Check back for additional farms throughout the season!
