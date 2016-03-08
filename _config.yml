@@ -20,10 +20,6 @@ prose:
         field:
           element: "hidden"
           value: "default"
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
       - name: "published"
         field:
           value: false
