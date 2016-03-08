@@ -26,6 +26,7 @@ prose:
           label: "Page ID"
           placeholder: "Lowercase, all one word"
           help: "This is for use in _data/nav.yml. Choose a unique ID for this page that is lowercase, all one word."
+          value: ~
       - name: "published"
         field:
           value: false
