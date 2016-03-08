@@ -4,6 +4,7 @@ id: csa
 published: true
 ---
 
+
 ## Prairieland Market Multi-Farm CSA
 Need a contract to sign up? Check back here for a link to download a fillable-form .pdf of the membership agreement--it'll be up soon!
 ### What is a CSA?
@@ -24,4 +25,6 @@ Alexander Farms
 Gabe's Sunflower Oasis  
 [Jirak Brothers Produce](http://jirakbros.com/)  
 [Saline County Produce](https://www.facebook.com/salinecountyproduce)  
-Twin Creek Farm  
+Twin Creek Farm
+
+We'll be adding more growers as the season progresses, so stay tuned!
