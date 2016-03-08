@@ -24,6 +24,9 @@ prose:
         field:
           element: "text"
           label: "title"
+      - name: "published"
+        field:
+          value: false
     _posts:
       - name: "layout"
         field:
