@@ -1,9 +1,10 @@
 ---
 layout: default
-published: false
+published: true
 title: "Prairieland Market Multi-Farm CSA"
 id: csa
 ---
+
 
 
 Need a contract to sign up? Check back here for a link to download a fillable-form .pdf of the membership agreement--it'll be up soon!
