@@ -39,3 +39,4 @@ prose:
         field:
           element: "text"
           label: "title"
+    _data: {}
