@@ -20,6 +20,12 @@ prose:
         field:
           element: "hidden"
           value: "default"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Page ID"
+          placeholder: "Lowercase, all one word"
+          help: "This is for use in _data/nav.yml. Choose a unique ID for this page that is lowercase, all one word."
       - name: "published"
         field:
           value: false
