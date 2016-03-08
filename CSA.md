@@ -1,9 +1,10 @@
 ---
 layout: default
-published: false
+published: true
 title: "Prairieland Market Multi-Farm CSA"
 id: csa
 ---
+
 
 
 
