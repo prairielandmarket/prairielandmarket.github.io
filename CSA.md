@@ -2,9 +2,11 @@
 layout: default
 published: false
 title: "Prairieland Market Multi-Farm CSA"
+id: ""
 ---
 
-Need a contract to sign up? Check back here for a link to the membership agreement--it'll be up soon!
+
+Need a contract to sign up? Check back here for a link to download a fillable-form .pdf of the membership agreement--it'll be up soon!
 ### What is a CSA?
 A CSA is defined by the mutual commitment between producers and consumers. Simply put: CSA members pay in advance (monthly, in our case), and in return are guaranteed a weekly share of the local harvest. In a successful CSA, members feel empowered by the knowledge that they are supporting their local farmers and are personally invested in the produce they bring home. 
 ### What goes in the box?
