@@ -1,7 +1,7 @@
 ---
 layout: default
 id: csa
-published: false
+published: true
 ---
 
 ## Prairieland Market Multi-Farm CSA
