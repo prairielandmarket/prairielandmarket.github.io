@@ -15,6 +15,15 @@ prose:
     - /_includes
     - /static
   metadata:
+    "":
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
     _posts:
       - name: "layout"
         field:
