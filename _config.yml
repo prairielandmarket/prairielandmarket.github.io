@@ -1,7 +1,4 @@
 name: Prairieland Market
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]
 timezone: America/Chicago
 prose:
   siteurl: "http://www.prairielandmarket.org"

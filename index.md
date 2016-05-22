@@ -21,6 +21,6 @@ Prairieland Market promotes the enduring health of both food buyers and growers,
 >
 > <cite>-- Wendell Berry</cite>
 
-#People and goods
+# People and goods
 
 Prairieland Market's directors are members who volunteer. Other members are welcome to help. Local growers supply fruits, vegetables, herbs, meat, cheese, and eggs. Local bakers also sell at Prairieland. We prepare and offer meals to go, such as meat and bean wraps, soup, and salad. We also stock organic produce, canned goods, and other food from suppliers, plus personal and house-cleaning products. We special order food for customers, including in bulk.
