@@ -6,7 +6,7 @@
     <a href="tel:{{ site.data.contact.phone.e164 }}">{{ site.data.contact.phone.human }}</a><br>
     <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
   </address>
-  <p>&copy; 2014 Prairieland Market</p>
+  <p>&copy; {{ site.time | date: '%Y' }} Prairieland Market</p>
   <p>Web services by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ianweller.org/" property="cc:attributionName" rel="cc:attributionURL">Ian Weller</a></p>
   <p>Design <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 </footer>
