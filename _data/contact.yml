@@ -10,14 +10,6 @@ address:
   url: http://maps.google.com/maps?q=305+East+Walnut+Street,+Salina,+Kansas&t=m
 hours:
   - day_start: Tuesday
-    day_end: Thursday
-    time_start: 2 pm
-    time_end: 6 pm
-  - day_start: Friday
-    day_end: Friday
-    time_start: 11 am
-    time_end: 6 pm
-  - day_start: Saturday
     day_end: Saturday
     time_start: 11 am
-    time_end: 3 pm
+    time_end: 7 pm
